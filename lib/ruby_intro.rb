@@ -59,11 +59,12 @@ def starts_with_consonant? s
   if s.length == 0
     return false
   end
+  arr = ["A", "E", "I", "O", "U"]
   first = s.to_s[0].upcase
   if arr.include? first
     return false
   end
-  if first =~ /[[:alpha]]/
+  if first =~ /[[:alpha:]]/
     return true
   else
     return false
